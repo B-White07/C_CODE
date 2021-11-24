@@ -1,0 +1,8 @@
+1.pull the target project into your local repository.
+2.right click the blank part in the current file(or the project) 
+	and choose "tortoiseGit" and click "add" and then choose "ok".
+3.click "commit" to commit the project to the local repository,
+	you can add the description about the project and click "ok".
+4.click "push",and then click "ok",and input your information.
+5.the target project has been upload to your github repository.
+ 
