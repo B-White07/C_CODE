@@ -1,9 +1,21 @@
+GUI：
+1.select a directory as you local repository and right click in it,choose "Git Clone" 
+	and fill your remote repository link.
 1.pull the target project into your local repository.
 2.right click the blank part in the current file(or the project) 
-	and choose "tortoiseGit" and click "add" and then choose "ok".
+	and choose "tortoiseGit" and click "add" and then choose "ok",
+	this step can make your project to prepare to be added to your local repository. 
 3.click "commit" to commit the project to the local repository,
-	you can add the description about the project and click "ok".
-4.click "push",and then click "ok",and input your information.
+	you can add the description about the project and click "ok",
+	this step can commit your porject to the local repository.
+4.click "push",and then click "ok",and input your information,
+	this step can upload your local repository to the remote one.
 5.the target project has been upload to your github repository.
 
+COMMAND LINE:
+1.select a directory and right click in it.
+2.input "git clone the link of remote repository".
+3.input "git add file name" to prepare to add the project into the local one.
+4.input "git commit -m "project description"" to commit the project to the local one.
+5.input "git push" to upload the local one to the remote one.
  
