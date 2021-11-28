@@ -1,2 +1,0 @@
-D:\DevelopmentTools\VisualStudio\Projects\2021.11.27\Debug\2021.11.27.exe
-D:\DevelopmentTools\VisualStudio\Projects\2021.11.27\Debug\2021.11.27.pdb
