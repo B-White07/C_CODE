@@ -18,4 +18,10 @@ COMMAND LINE:
 3.input "git add file name" to prepare to add the project into the local one.
 4.input "git commit -m "project description"" to commit the project to the local one.
 5.input "git push" to upload the local one to the remote one.
- 
+
+DELETE FILE：
+1.git pull
+2.you can use "dir" to show the files
+3.git rm -r --cached target
+4.git commit -m "describtion"
+5.git push 
