@@ -1,0 +1,7 @@
+﻿  day_09.c
+  utils.c
+D:\DevelopmentTools\VisualStudio\Projects\2021.12.05\utils.c(28,20): warning C4133: “-”: 从“int *”到“char *”的类型不兼容
+D:\DevelopmentTools\VisualStudio\Projects\2021.12.05\utils.c(23,1): warning C4133: “初始化”: 从“char *”到“int *”的类型不兼容
+  正在生成代码...
+D:\DevelopmentTools\VisualStudio\Projects\2021.12.05\utils.c(7): warning C4172: 返回局部变量或临时变量的地址: a
+  2021.12.05.vcxproj -> D:\DevelopmentTools\VisualStudio\Projects\2021.12.05\Debug\2021.12.05.exe
