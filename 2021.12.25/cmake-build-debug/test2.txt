@@ -1,0 +1,10 @@
+    int res = 0;
+    FILE *pf2 = fopen("test.txt", "r");
+    if (pf2 == NULL) {
+        perror("fopen");
+        return 1;
+    }
+    fread(&res, sizeof(int), 1, pf2);
+    printf("%d", res);
+    fclose(pf2);
+    pf2 = NULL;
