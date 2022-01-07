@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-//´òÓ¡
+//æ‰“å°
 #include<stdio.h>
 void print(unsigned int num)
 {
@@ -10,16 +10,16 @@ void print(unsigned int num)
 	printf("%d ", num % 10);
 }
 
-//Õ»Òç³ö
+//æ ˆæº¢å‡º
 void test(int n)
 {
 	if (10000 > n)
 	{
-		test(n + 1);//Ò»Ö±Îªtest()¿ª±Ù¿Õ¼ä£¬»áÔì³Éstack overflowÕ»Òç³ö
+		test(n + 1);//ä¸€ç›´ä¸ºtest()å¼€è¾Ÿç©ºé—´ï¼Œä¼šé€ æˆstack overflowæ ˆæº¢å‡º
 	}
 }
 
-//Ä£ÄâÊµÏÖstrlen()
+//æ¨¡æ‹Ÿå®ç°strlen()
 int myStrlen1(char* a)
 {
 	int count = 0;
@@ -31,7 +31,7 @@ int myStrlen1(char* a)
 	return count;
 }
 
-//¸Ä½ø£¬²»ÔÊĞí´´½¨ÁÙÊ±±äÁ¿£¬Çó×Ö·û´®³¤¶È
+//æ”¹è¿›ï¼Œä¸å…è®¸åˆ›å»ºä¸´æ—¶å˜é‡ï¼Œæ±‚å­—ç¬¦ä¸²é•¿åº¦
 int myStrlen2(char* a)
 {
 	if ('\0' != *a)
@@ -40,7 +40,7 @@ int myStrlen2(char* a)
 		return 0;
 }
 
-//ÇónµÄ½×³Ë
+//æ±‚nçš„é˜¶ä¹˜
 int jieCheng(int n)
 {
 	if (1 != n)
@@ -51,13 +51,13 @@ int jieCheng(int n)
 		return 1;
 }
 
-//ÇóµÚn¸öì³²¨ÄÇÆõÊı
+//æ±‚ç¬¬nä¸ªæ–æ³¢é‚£å¥‘æ•°
 int count = 0;
-//µİ¹é¿ÉÒÔÇó½â£¬µ«ÊÇĞ§ÂÊºÜµÍ
+//é€’å½’å¯ä»¥æ±‚è§£ï¼Œä½†æ˜¯æ•ˆç‡å¾ˆä½
 int fib1(int n)
 {
-	//¼ÆËãµÚÈı¸öì³²¨ÄÇÆõÊı±»¼ÆËãµÄ´ÎÊı
-	//¿´³öĞ§ÂÊ±È½ÏµÍ
+	//è®¡ç®—ç¬¬ä¸‰ä¸ªæ–æ³¢é‚£å¥‘æ•°è¢«è®¡ç®—çš„æ¬¡æ•°
+	//çœ‹å‡ºæ•ˆç‡æ¯”è¾ƒä½
 	if (3 == n)
 	{
 		count++;
@@ -72,7 +72,7 @@ int fib1(int n)
 	}
 
 }
-//µü´úµÄ·½·¨£¬Ğ§ÂÊ¸ß
+//è¿­ä»£çš„æ–¹æ³•ï¼Œæ•ˆç‡é«˜
 int fib2(int n)
 {
 	int a = 1;
@@ -88,7 +88,7 @@ int fib2(int n)
 	return c;
 }
 
-//ººÅµËş
+//æ±‰è¯ºå¡”
 void move(char A,char B)
 {
 	printf("%c --> %c\n",A,B);
@@ -105,13 +105,12 @@ void hanNuo(char A,char B,char C,int num)
 		hanNuo(A, C, B, num - 1);
 		move(A, C);
 		hanNuo(B, A, C, num - 1);
-		num--;
 	}
 }
 
-//ÇàÍÜÌøÌ¨½×
+//é’è›™è·³å°é˜¶
 
-//¼ÆËã1/1-1/2+1/3-1/4+...-1/100µÄÖµ£¬´òÓ¡½á¹û
+//è®¡ç®—1/1-1/2+1/3-1/4+...-1/100çš„å€¼ï¼Œæ‰“å°ç»“æœ
 double sum1()
 {
 	double sum = 0.0;
@@ -124,23 +123,23 @@ double sum1()
 	}
 	return sum;
 }
-//¸Ä½ø
+//æ”¹è¿›
 double sum2()
 {
 	double sum = 0;
 	int flag = 1;
 	for (int i = 1; i <= 100; i++)
-	{//ĞèÒªÁ½¸ö²Ù×÷ÊıÖÁÉÙÓĞÒ»¸öÊÇĞ¡Êı²ÅÄÜËã³öĞ¡Êı,±ØĞëĞ´1.0£¬·ñÔò¼ÆËã¹ı³ÌÖĞ»á°´ÕÕÕûĞÍ´¦Àí¡£¶¨ÒåµÄÊ±ºòÔò²»ĞèÒª£¬¶¨ÒåÊ²Ã´¾ÍÊÇÊ²Ã´ÀàĞÍ¡£
+	{//éœ€è¦ä¸¤ä¸ªæ“ä½œæ•°è‡³å°‘æœ‰ä¸€ä¸ªæ˜¯å°æ•°æ‰èƒ½ç®—å‡ºå°æ•°,å¿…é¡»å†™1.0ï¼Œå¦åˆ™è®¡ç®—è¿‡ç¨‹ä¸­ä¼šæŒ‰ç…§æ•´å‹å¤„ç†ã€‚å®šä¹‰çš„æ—¶å€™åˆ™ä¸éœ€è¦ï¼Œå®šä¹‰ä»€ä¹ˆå°±æ˜¯ä»€ä¹ˆç±»å‹ã€‚
 		sum += flag * 1.0 / i;
 		flag = -flag;
 	}
 	return sum;
 }
 
-//Çó×î´óÖµ
+//æ±‚æœ€å¤§å€¼
 int Max(int arr[],int length)
 {
-	int max = arr[0];//×¢Òâ²»ÄÜ½«max¸³ÖµÎª0£¬·ñÔò¸ºÊıÎŞ·¨±È½Ï
+	int max = arr[0];//æ³¨æ„ä¸èƒ½å°†maxèµ‹å€¼ä¸º0ï¼Œå¦åˆ™è´Ÿæ•°æ— æ³•æ¯”è¾ƒ
 	for (int i = 1; i < length; i++)
 	{
 		if (arr[i] > max)
@@ -149,20 +148,20 @@ int Max(int arr[],int length)
 	return max;
 }
 
-//³Ë·¨±í
+//ä¹˜æ³•è¡¨
 void chengFaBiao(int n)
 {
 	for (int i = 1; i <= n; i++)
 	{
 		for (int j = 1; j <= i; j++)
 		{
-			printf("%d*%d=%-3d ", j, i, i * j);//%-2d ×ó¶ÔÆë´òÓ¡Á½Î»£¬%2dÔòÎªÓÒ¶ÔÆë
+			printf("%d*%d=%-3d ", j, i, i * j);//%-2d å·¦å¯¹é½æ‰“å°ä¸¤ä½ï¼Œ%2dåˆ™ä¸ºå³å¯¹é½
 		}
 		printf("\n");
 	}
 }
 
-//µ¹Ğò×Ö·û´®
+//å€’åºå­—ç¬¦ä¸²
 void reverseStr1(char *a)
 {
 	int right = myStrlen2(a) - 1;
@@ -176,7 +175,7 @@ void reverseStr1(char *a)
 		right--;
 	}
 }
-//µİ¹éÊµÏÖ
+//é€’å½’å®ç°
 void reverseStr2(char* a)
 {
 	//int left = 0;
@@ -184,7 +183,7 @@ void reverseStr2(char* a)
 	char tmp = *a;
 	*a = *(a + len);
 	*(a + len) = '\0';
-	//¸ø³öµİ¹é³ö¿Ú
+	//ç»™å‡ºé€’å½’å‡ºå£
 	if (myStrlen1(a + 1) >= 2)
 	{
 		reverseStr2(a + 1);
@@ -192,7 +191,7 @@ void reverseStr2(char* a)
 	*(a + len) = tmp;
 }
 
-//Ğ´Ò»¸öµİ¹éº¯Êı£¬ÊäÈëÒ»¸ö·Ç¸ºÕûÊı£¬·µ»Ø×é³ÉËûµÄÊı×ÖÖ®ºÍ
+//å†™ä¸€ä¸ªé€’å½’å‡½æ•°ï¼Œè¾“å…¥ä¸€ä¸ªéè´Ÿæ•´æ•°ï¼Œè¿”å›ç»„æˆä»–çš„æ•°å­—ä¹‹å’Œ
 int DigitSum1(int num)
 {
 	int sum = 0;
@@ -207,7 +206,7 @@ int DigitSum1(int num)
 	}
 	return sum;
 }
-//¸Ä½ø
+//æ”¹è¿›
 int DigitSum2(int num)
 {
 	if (9 < num)
@@ -220,7 +219,7 @@ int DigitSum2(int num)
 	}
 }
 
-//nµÄk´Î·½
+//nçš„kæ¬¡æ–¹
 double chengFang(int num, int k)
 {
 	if (k > 0)
