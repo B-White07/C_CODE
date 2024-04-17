@@ -14,9 +14,9 @@ GUI：
 
 COMMAND LINE:
 1.select a directory and right click in it.
-2.input "git clone the link of remote repository".
-3.input "git add file name" to prepare to add the project into the local one.
-4.input "git commit -m "project description"" to commit the project to the local one.
+2.input "git clone 'the link of remote repository'".
+3.input "git add 'file name'" to prepare to add the project into the local one.
+4.input "git commit -m 'project description'" to commit the project to the local one.
 5.input "git push" to upload the local one to the remote one.
 
 DELETE FILE：
